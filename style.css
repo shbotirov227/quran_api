@@ -7,6 +7,23 @@ body {
     min-height: 100%;
 }
 
+@media only screen and (max-width: 375px) {
+    .buttonsWrap {
+        flex-direction: column;
+    }
+    .surahName {
+        font-size: 5px;
+    }
+    
+    .player input {
+        width: 100%;
+        margin: 30px 0;
+    }
+    #readAllSurah {
+        margin: 0 auto;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;

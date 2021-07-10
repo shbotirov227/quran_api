@@ -37,10 +37,10 @@ inputName.addEventListener('keyup', () => {
             li.appendChild(h2)
             ayahs.appendChild(li)
 
-            li.addEventListener('click', () => {
-                fetched()
-                quranPlayer.play()
-            })
+            // li.addEventListener('click', () => {
+            //     fetched()
+            //     quranPlayer.play()
+            // })
         });
 
         // audio API ga so'rov jo'natish
@@ -57,7 +57,7 @@ inputName.addEventListener('keyup', () => {
                 let oyatlar = data.data.verses;
                 oyatlar.map((item) => {
                     quranPlayer.src = item.audio.primary;
-                    quranPlayer.play()
+                    // quranPlayer.play()
                 });
                 console.log(quranPlayer);
 
