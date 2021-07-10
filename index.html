@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran player</title>
+    <link rel="shotcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="player">
+            <h1 style="color: #fff; text-align: center; margin-bottom: 10px;">Quran Player</h1>
+            <audio src="" class="quranPlayer" controls ></audio>
+            <div class="buttonsWrap">
+                <div class="buttons">
+                    <div class="icon prev"><i class="fas fa-backward"></i></div>
+                    <div class="icon play"><i class="fas fa-play"></i></div>
+                    <div class="icon next"><i class="fas fa-forward"></i></div> 
+                </div>
+                <h1 class="surahName">Name of Surah</h1>
+                <input type="number" id="inputName">
+            </div>
+            <button id="readAllSurah">Surani hammasini o'qish</button>
+        </div>
+
+        <div class="surahs">
+            <ul id="ayahs"></ul>
+        </div>
+
+
+    </div>
+
+
+    <!-- <ul class="list"></ul>
+    <div class="data1"></div>
+    <div class="data2"></div> -->
+
+    <!-- <div id="audioWrap">
+        <button id="btnPlay">Play</button>
+        <button id="btnPause">Pause</button>
+    </div> -->
+    
+    <script src="./index.js"></script>
+</body>
+</html>
