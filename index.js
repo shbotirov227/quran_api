@@ -36,11 +36,6 @@ inputName.addEventListener('keyup', () => {
             li.appendChild(h1)
             li.appendChild(h2)
             ayahs.appendChild(li)
-
-            // li.addEventListener('click', () => {
-            //     fetched()
-            //     quranPlayer.play()
-            // })
         });
 
         // audio API ga so'rov jo'natish
@@ -78,31 +73,3 @@ inputName.addEventListener('keyup', () => {
 // ue}`) ])fetched.then((responses) => {     return Promise.all(responses.map(
 // (response) => {         return response.json();     })); }).then((data) => {
 //    console.log(data); }).catch(function (error) {     console.log(error); });
-
-function quranApi() {}
-
-quranApi()
-
-// function foo() {     fetch('http://api.alquran.cloud/v1/surah').then((res) =>
-// {         return res.json();     }).then((data) => { console.log(data);
-// data.data.map((item) => { inputName.addEventListener('keyup', () => { if
-// (inputName.value == item.number) { surah.textContent = item.englishName
-// console.log(item.number == inputName.value);     }      })             });
-// }).catch((err) => {         throw Error('errr') }) } foo() let isTrue = true;
-// function isTrueOrFalse() { faPlay.addEventListener('click', () => { if
-// (isTrue) { faPlay         .classList       .remove('fa-play') faPlay
-// .classList          .add('fa-pause');             isTrue = false    } else {
-//     faPlay.classList.add('fa-play'); faPlay.classList.remove('fa-pause');
-//         isTrue = true         } }) } isTrueOrFalse() function func() {
-// inputName.addEventListener('keyup', () => { console.log(inputName.value)
-// fetch(`http://api.alquran.cloud/v1/surah/${inputName.value}/ar.alafasy`).then
-// ( (res) => {             return res.json();         }).then((data) => {
-// surah.textContent = data.data.englishName; play.addEventListener('click', ()
-// => { data.data.ayahs.forEach(item => { console.log(); quranPlayer.src =
-// item.audio      });         quranPlayer.play(); console.log(data.data.ayahs);
-//  });         if (isTrue === true) { pause.addEventListener('click', () => {
-//   quranPlayer.stop()    })    } }).catch((err) => { throw Error('erroorrr')
-//     })     }) } func() function surahRender () {  fetch
-// (`https://salamquran.com/api/v6/`) .then(res => { return res.json();
-// }).then(data => { console.log(data); }).catch(err => {             throw
-// Error('error keldi')       }) } surahRender()
