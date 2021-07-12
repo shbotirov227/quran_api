@@ -7,23 +7,6 @@ body {
     min-height: 100%;
 }
 
-@media only screen and (max-width: 375px) {
-    .buttonsWrap {
-        flex-direction: column;
-    }
-    .surahName {
-        font-size: 5px;
-    }
-    
-    .player input {
-        width: 100%;
-        margin: 30px 0;
-    }
-    #readAllSurah {
-        margin: 0 auto;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -119,4 +102,37 @@ body {
     border-radius: 20px;
     list-style-type: none;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+    .buttonsWrap {
+        flex-direction: column;
+    }
+    .surahName {
+        font-size: 30px;
+    }
+    
+    .player input {
+        width: 100%;
+        margin: 30px 0;
+    }
+    #readAllSurah {
+        margin: 0 auto;
+    }
+    .surahs #ayahs li {
+        background: rgba(175, 170, 170, 0.9);
+        padding: 10px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .surahs #ayahs h1 {
+        margin-bottom: 10px;
+        color: rgb(8, 8, 8);
+        font-size: 30px;
+    }
+    .surahs #ayahs h2 {
+        margin-bottom: 10px;
+        color: rgb(8, 8, 8);
+        font-size: 20px;
+    }
 }
